@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 
 import {MatGridListModule} from '@angular/material';
 import { TitleComponent } from './title/title.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleComponent
+    TitleComponent,
+    ImageCarouselComponent,
+    ContactsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
