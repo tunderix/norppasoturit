@@ -1,27 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.routing';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import {MatGridListModule} from '@angular/material';
-import { TitleComponent } from './title/title.component';
-import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { FooterComponent } from './footer/footer.component';
+import { LandingComponent } from './landing/landing.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleComponent,
-    ImageCarouselComponent,
-    ContactsComponent,
+    LandingComponent,
+    ProfileComponent,
+    NavbarComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MatGridListModule
+    NgbModule.forRoot(),
+    FormsModule,
+    RouterModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
