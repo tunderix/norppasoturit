@@ -3,7 +3,7 @@
 }
 
 .tim-white-buttons {
-    background-color: #777777;
+    background-color: #0DB6BD;
 }
 
 .tim-title {
@@ -79,7 +79,7 @@
 }
 
 .main {
-    background-color: #fff;
+    background-color: #0C886E;
     /*     position: relative; */
 }
 
@@ -160,7 +160,7 @@
 }
 
 .footer nav>ul a:not(.btn) {
-    color: #777777;
+    color: #0DB6BD;
     display: block;
     margin-bottom: 3px;
 }
@@ -170,7 +170,7 @@
 }
 
 .footer .copyright {
-    color: #777777;
+    color: #0DB6BD;
     padding: 10px 15px;
     font-size: 14px;
     margin: 15px 3px;
@@ -583,6 +583,37 @@
 
 .presentation .section-black {
     background-color: #333;
+}
+
+.presentation .section-norppa-green {
+    background-color: #0C886E;
+}
+.norppa-blue {
+    background-color: #01B4CA;
+    border-color: #0DB6BD;
+}
+.norppa-title {
+    color: #FFF;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.norppa-description {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.norppa-str{
+    margin-bottom: 35px;
+}
+
+.norppa-placeholder {
+    color: #1e2f3a;
+}
+
+.norppa-event-logo{
+    width: 120px;
+    height: 120px;
 }
 
 .rotating-card-container {
