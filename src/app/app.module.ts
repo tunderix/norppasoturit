@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
+import { YoutubePlayerModule } from 'ng2-youtube-player';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     NgbModule.forRoot(),
     FormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    YoutubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

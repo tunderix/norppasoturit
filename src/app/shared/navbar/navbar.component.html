@@ -3,7 +3,6 @@
         <div class="navbar-translate">
             <a class="navbar-brand" href="https://www.creative-tim.com">
                 <img class="norppa-logo" src="./assets/img/norpat/norppa_sapluuna.png" alt="...">
-                
             </a>
             
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
@@ -12,8 +11,12 @@
                 <span class="navbar-toggler-bar"></span>
             </button>
         </div>
+        <a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+            <h1 class="nav-header">Norppasoturit</h1> 
+        </a>
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
+                
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
                         <i class="fa fa-facebook-square"></i>

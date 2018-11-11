@@ -172,7 +172,7 @@
 .footer .copyright {
     color: #0DB6BD;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 22px;
     margin: 15px 3px;
     line-height: 20px;
     text-align: center;
@@ -592,6 +592,12 @@
     background-color: #01B4CA;
     border-color: #0DB6BD;
 }
+
+.norppa-green {
+    background-color: #0C886E;
+    border-color: #0C886E;
+}
+
 .norppa-title {
     color: #FFF;
     margin: 10px;

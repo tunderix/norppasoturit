@@ -2,7 +2,6 @@
     <div class="filter"></div>
     <div class="container">
         <div class="motto text-center">
-                <h1>Norppasoturit</h1>
             <h3>Keskiajalla saatettiin voita kaivaa röyhkeästi tiinun keskeltä.</h3>
             <h3>Siksi sitä kutsutaankin keskiajaksi.</h3>
         </div>
@@ -81,16 +80,62 @@
 <div class="section section-dark text-center">
     <div class="container">
         <div class="row">
-            <h1 class="norppa-title">Boffaus - Turvallista kamppailu-urheilua</h1>
-            <!-- Some Stuff In here! -->
+            <div class="mr-auto ml-auto">
+                <h1 class="norppa-title">Sotahuuto</h1>
+                <br>
+                <h5 class="norppa-description">Sotahuuto on vuoden suurin boffaustapahtuma, jossa yhdistyy urheilu, historian elävoityminen, taisteluhenki, leiriytyminen, strategia ja pelimekaniikkojen/sääntöjen muokkaus omiin tarpeisiin.</h5>
+                <h5 class="norppa-description">Norpat osallistuvat toistuvasti Sotahuutoon, jossa viimeisen vuoden harjoittelun tulokset nähdään.</h5>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <youtube-player
+                    [videoId]="id_SH14"
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)"
+                ></youtube-player>
+            </div>
+            <div class="col-md-4">
+                <youtube-player
+                    [videoId]="id_SH16"
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)"
+                ></youtube-player>
+            </div>
+            <div class="col-md-4">
+                <youtube-player
+                    [videoId]="id_SH14_hl"
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)"
+                ></youtube-player>
+            </div>
         </div>
     </div>
 </div>
     
 <div class="section-norppa-green landing-section ">
     <div class="container">
+        <div class="mr-auto ml-auto text-center">
+            <h1 class="norppa-title">Boffaus</h1>
+            <br>
+        </div>
         <div class="row">
-            <!-- Some Stuff In here! -->
+            <div class="col-md-4">
+                <youtube-player
+                    [videoId]="id_BF"
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)"
+                ></youtube-player>
+            </div>
+            <div class="col-md-8">
+                <div class="mr-auto ml-auto">
+                    <h5 class="norppa-description">Boffaus on pehmoasetaistelua, jossa harjoitellaan käyttämään sääntöjen mukaisesti pehmustettuja aseita.</h5>
+                    <br>
+                    <h5 class="norppa-description">Useimmiten harrastaminen tapahtuu kesäisin ulkona ja talvella sisätiloissa.</h5>
+                    <br>
+                    <h5 class="norppa-description">Youtubesta löytyy kanava (<a href="https://www.youtube.com/channel/UC7mxgJQ-bzaj061Gqb5iX8g">Boffaajan Käsikirja</a>), josta löytyy perustietoa boffaukselle ominaisista tekniikoista käyttäen eri aseita. </h5>
+                    <h5 class="norppa-description"> <a href="https://fi.wikipedia.org/wiki/Boffaus">Täältä(Wikipedia)</a> voit käydä katsomassa yleistä tietoa boffauksesta</h5>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -98,12 +143,15 @@
 
 <div class="section section-dark text-center">
     <div class="container">
+        <h1 class="norppa-title">Miksi? Kuinka liittyä mukaan toimintaan?</h1>
         <div class="row">
-            <h1 class="norppa-title">Miksi? Kuinka liittyä mukaan toimintaan?</h1>
+            <div class="col-md-8">
+                
+            </div>
             <div class="col-md-4">
                 <div class="card card-profile card-plain">
                     <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/img/norpat/samitahka.png" alt="..."></a>
+                            <a href="#avatar"><img src="./assets/img/norpat/samitahka.png" alt="..."></a>
                     </div>
                     <div class="card-block">
                         <a href="#paper-kit">
@@ -113,57 +161,12 @@
                             </div>
                         </a>
                         <p class="card-description text-center">
-                            Ota miuhun yhteyttä suoraan soittamalla, facebookin kautta tai lähettämällä mailia!
+                            Minut tavoittaa Facebookista tai mailitse
                         </p>
                     </div>
                     <div class="card-footer text-center">
                         <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-facebook"></i></a>
-                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/img/norpat/samitahka.png" alt="..."></a>
-                    </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h4 class="card-title">Sampsoni</h4>
-                                <h6 class="card-category">Tiimiliidu</h6>
-                            </div>
-                        </a>
-                        <p class="card-description text-center">
-                            Kasailen joka vuosi porukan SoHuun ja järjestän yhteisiä shettejä
-                        </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card card-profile card-plain">
-                    <div class="card-avatar">
-                        <a href="#avatar"><img src="./assets/img/norpat/samitahka.png" alt="..."></a>
-                    </div>
-                    <div class="card-block">
-                        <a href="#paper-kit">
-                            <div class="author">
-                                <h4 class="card-title">Sampsoni</h4>
-                                <h6 class="card-category">Tiimiliidu</h6>
-                            </div>
-                        </a>
-                        <p class="card-description text-center">
-                            Kasailen joka vuosi porukan SoHuun ja järjestän yhteisiä shettejä
-                        </p>
-                    </div>
-                    <div class="card-footer text-center">
-                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
-                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                        <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
