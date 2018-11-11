@@ -10,14 +10,20 @@ export class LandingComponent implements OnInit {
 
   player: YT.Player;
 
-  constructor() { }
+  id_SH14: string = 'HC-nruq6dGA';
+  id_SH16: string = 'ZgWVd3GW4Vk';
+  id_SH14_hl: string = 'RkPmmDAIn5c';
+  id_BF: string = 'C_s4dIOXnJY';
+
+  constructor() { 
+    this.id_SH14 = 'HC-nruq6dGA';
+    this.id_SH16 = 'ZgWVd3GW4Vk';
+    this.id_SH14_hl = 'RkPmmDAIn5c';
+    this.id_BF = 'C_s4dIOXnJY';
+  }
 
   ngOnInit() {}
 
-  private id_SH14: string = 'HC-nruq6dGA';
-  private id_SH16: string = 'ZgWVd3GW4Vk';
-  private id_SH14_hl: string = 'RkPmmDAIn5c';
-  private id_BF: string = 'C_s4dIOXnJY';
  
   savePlayer (player) {
     this.player = player;
