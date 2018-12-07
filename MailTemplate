@@ -1,0 +1,6 @@
+curl -s --user 'api:62af6997bad5912e0e337d925192dc9a-52cbfb43-12127aa9' \
+    https://api.mailgun.net/v3/sandbox099de222c8cf4528a31620d52e8a8b9b.mailgun.org/messages \
+    -F from='Excited User <mailgun@sandbox099de222c8cf4528a31620d52e8a8b9b.mailgun.org>' \
+    -F to=norppasoturit@yandex.com \
+    -F subject='Webbisivukontakti' \
+    -F text='Testing some Mailgun awesomeness!'

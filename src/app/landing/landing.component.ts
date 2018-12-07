@@ -15,6 +15,10 @@ export class LandingComponent implements OnInit {
   id_SH14_hl: string = 'RkPmmDAIn5c';
   id_BF: string = 'C_s4dIOXnJY';
 
+  name: string;
+  mail: string;
+  textcontent: string;
+
   constructor() { 
     this.id_SH14 = 'HC-nruq6dGA';
     this.id_SH16 = 'ZgWVd3GW4Vk';
@@ -32,5 +36,15 @@ export class LandingComponent implements OnInit {
 
   onStateChange(event){
     console.log('player state', event.data);
+  }
+
+  /**
+   * Process the form we have. Send to whatever backend
+   * Only alerting for now
+   */
+  processForm() {
+    const allInfo = `My name is ${this.name}. My email is ${this.mail}. My message is ${this.textcontent}`;
+    alert(allInfo);
+      
   }
 }

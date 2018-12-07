@@ -257,7 +257,7 @@
         <div class="row">
             <div class="col-md-8 mr-auto ml-auto">
                 <h2 class="text-center norppa-title">Norppien palautelammikko</h2>
-                <form class="contact-form">
+                <form class="contact-form" (ngSubmit)="processForm()">
                     <div class="row">
                         <div class="col-md-6">
                             <label class="norppa-title">Nimi</label>
@@ -265,7 +265,7 @@
                                 <span class="input-group-addon">
                                     <i class="nc-icon nc-single-02"></i>
                                 </span>
-                                <input type="text" class="form-control norppa-placeholder" placeholder="Nimi tähän">
+                                <input type="text" name="name" [(ngModel)]="name" class="form-control norppa-placeholder" placeholder="Nimi tähän">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -274,15 +274,15 @@
                                 <span class="input-group-addon">
                                     <i class="nc-icon nc-email-85"></i>
                                 </span>
-                                <input type="text" class="form-control norppa-placeholder" placeholder="Maili tähän">
+                                <input type="text" name="mail" [(ngModel)]="mail" class="form-control norppa-placeholder" placeholder="Maili tähän">
                             </div>
                         </div>
                     </div>
                     <label class="norppa-title">Viesti</label>
-                    <textarea class="form-control norppa-placeholder" rows="4" placeholder="Mitäs mussutettavaa siulla olisi?"></textarea>
+                    <textarea class="form-control norppa-placeholder" name="textcontent" [(ngModel)]="textcontent" rows="4" placeholder="Mitäs mussutettavaa siulla olisi?"></textarea>
                     <div class="row">
                         <div class="col-md-4 mr-auto ml-auto">
-                            <button class="btn norppa-blue norppa-str">Lähetä</button>
+                            <button type="submit" class="btn norppa-blue norppa-str">Lähetä</button>
                         </div>
                     </div>
                 </form>
